@@ -13,19 +13,26 @@ int algorithm (int n, int counter){
 }
 
 int main() {
-    int n1, n2, max, temp;
-    cin >> n1;
-    cin >> n2;
-    max = 0;
+    int data [4][3];
 
-    for(int i = n1; i <= n2; i++){
-        temp = algorithm(i, 1);
-        if(temp > max){
-            max = temp;
+    for(int k = 0; k < 4; k++){
+        int max, temp;
+        max = 0;
+        cin >> data[k][0];
+        cin >> data[k][1];
+
+        for(int i = data[k][0]; i <= data[k][1]; i++){
+            temp = algorithm(i, 1);
+            if(temp > max){
+                max = temp;
+            }
         }
+        data[k][2] = max;
     }
 
-    cout << n1 << " " << n2 << " " << max;
+    for(int l = 0; l < 4; l++){
+        cout << data[l][0] << " " << data[l][1] << " " << data[l][2] << endl;
+    }
 
     return 0;
 }
