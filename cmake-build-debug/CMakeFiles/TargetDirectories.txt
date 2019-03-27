@@ -1,0 +1,3 @@
+C:/Users/Alejandro/Documents/GitHub/the-3n-1-problem-Mandarine2312/cmake-build-debug/CMakeFiles/the-3n-1-problem-Mandarine2312.dir
+C:/Users/Alejandro/Documents/GitHub/the-3n-1-problem-Mandarine2312/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alejandro/Documents/GitHub/the-3n-1-problem-Mandarine2312/cmake-build-debug/CMakeFiles/rebuild_cache.dir
