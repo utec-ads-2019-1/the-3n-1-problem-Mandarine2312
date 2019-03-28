@@ -12,7 +12,7 @@ int algorithm (int n, int counter){
     }
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     int data [4][3];
 
     for(int k = 0; k < 4; k++){
@@ -20,6 +20,13 @@ int main() {
         max = 0;
         cin >> data[k][0];
         cin >> data[k][1];
+
+        if(data[k][0] > data[k][1]){
+            temp = data[k][1];
+            data[k][1] = data[k][0];
+            data[k][0] = temp;
+
+        }
 
         for(int i = data[k][0]; i <= data[k][1]; i++){
             temp = algorithm(i, 1);
