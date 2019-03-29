@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -11,35 +12,35 @@ int algorithm (int n, int counter){
         return algorithm(n/2, counter + 1);
     }
 }
+int getMax(int in, int fin){
+    int temp, max = 0;
+    for(int i = in; i <= fin; i++){
+        temp = algorithm(i, 1);
+        if(temp > max){
+            max = temp;
+        }
+    }
+    return max;
+}
+
+void checkIfSwap(int* in, int* fin){
+    int temp;
+    if(*in > *fin){
+        temp = *fin;
+        *fin = *in;
+        *in = temp;
+    }
+}
 
 int main(int argc, char *argv[]) {
-    int data [4][3];
+    int a, b;
+    while((scanf("%d %d", &a, &b)) == 2) {
+        int in, fin;
+        cin >> in >> fin;
 
-    for(int k = 0; k < 4; k++){
-        int max, temp;
-        max = 0;
-        cin >> data[k][0];
-        cin >> data[k][1];
+        checkIfSwap(&in, &fin);
 
-        if(data[k][0] > data[k][1]){
-            temp = data[k][1];
-            data[k][1] = data[k][0];
-            data[k][0] = temp;
-
-        }
-
-        for(int i = data[k][0]; i <= data[k][1]; i++){
-            temp = algorithm(i, 1);
-            if(temp > max){
-                max = temp;
-            }
-        }
-        data[k][2] = max;
+        cout << in << " " << fin << " " << getMax(in, fin) << endl;
     }
-
-    for(int l = 0; l < 4; l++){
-        cout << data[l][0] << " " << data[l][1] << " " << data[l][2] << endl;
-    }
-
-    return 0;
 }
+
