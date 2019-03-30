@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/the-3n-1-problem-Mandarine2312.dir/main.cpp.obj"
+  "CMakeFiles/the-3n-1-problem-Mandarine2312.dir/main.cpp.o"
   "the-3n-1-problem-Mandarine2312.pdb"
-  "the-3n-1-problem-Mandarine2312.exe"
-  "the-3n-1-problem-Mandarine2312.exe.manifest"
-  "libthe-3n-1-problem-Mandarine2312.dll.a"
+  "the-3n-1-problem-Mandarine2312"
 )
 
 # Per-language clean rules from dependency scanning.

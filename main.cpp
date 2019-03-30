@@ -12,6 +12,7 @@ int algorithm (int n, int counter){
         return algorithm(n/2, counter + 1);
     }
 }
+
 int getMax(int in, int fin){
     int temp, max = 0;
     for(int i = in; i <= fin; i++){
@@ -24,6 +25,7 @@ int getMax(int in, int fin){
 }
 
 void checkIfSwap(int* in, int* fin){
+    //cout << *in << " " << *fin << endl;
     int temp;
     if(*in > *fin){
         temp = *fin;
@@ -33,14 +35,15 @@ void checkIfSwap(int* in, int* fin){
 }
 
 int main(int argc, char *argv[]) {
-    int a, b;
+    int a, b, in, fin;
     while((scanf("%d %d", &a, &b)) == 2) {
-        int in, fin;
-        cin >> in >> fin;
 
-        checkIfSwap(&in, &fin);
+        in = a;
+        fin = b;
 
-        cout << in << " " << fin << " " << getMax(in, fin) << endl;
+        checkIfSwap(&a, &b);
+
+        cout << in << " " << fin << " " << getMax(a, b) << endl;
     }
 }
 

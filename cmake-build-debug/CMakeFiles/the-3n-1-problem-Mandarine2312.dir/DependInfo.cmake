@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Alejandro/Documents/GitHub/the-3n-1-problem-Mandarine2312/main.cpp" "C:/Users/Alejandro/Documents/GitHub/the-3n-1-problem-Mandarine2312/cmake-build-debug/CMakeFiles/the-3n-1-problem-Mandarine2312.dir/main.cpp.obj"
+  "/home/alejandro/Documents/Workspace/the-3n-1-problem-Mandarine2312/main.cpp" "/home/alejandro/Documents/Workspace/the-3n-1-problem-Mandarine2312/cmake-build-debug/CMakeFiles/the-3n-1-problem-Mandarine2312.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
